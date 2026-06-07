@@ -41,4 +41,9 @@ public class BudgetManager
         }
         return totalExpenses;
     }
+
+    public decimal GetBalance()
+    {
+        return GetTotalIncome() - GetTotalExpenses();
+    }
 }
